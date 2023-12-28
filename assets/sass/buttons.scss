@@ -1,0 +1,134 @@
+/*COLORS*/
+$principal-color-900: #182A4F;
+$principal-color-700: #284785;
+$principal-color-500: #3864BB;
+$principal-color-200: #A3B8E0;
+$principal-color-100: #c1cfea;
+$principal-color-50: #EBF0F8;
+$light-color: #FFFFF9;
+
+
+
+button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: $light-color;
+    background-color: $principal-color-500;
+    border-radius: 2px;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: $light-color;
+    }
+}
+
+
+
+.button-secondary {
+    background-color: $light-color;
+    border: 2px solid $principal-color-500;
+
+    a {
+        color: $principal-color-900;
+    }
+    
+}
+
+
+
+.button-email {
+    background-color: $principal-color-100;
+    color: $principal-color-900;
+    font-size: 18px;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition: color 0.3s;
+    padding: 14px 20px;
+
+    a {
+        color: $principal-color-900;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: $principal-color-200;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.3s ease-out;
+        border-radius: 2px;    
+    }
+
+    &:hover::before{
+        transform: scaleX(1);
+    }
+
+   
+}
+
+
+
+                                        /*HOVER ANIMATION - desktop*/
+@media only screen and (min-width: 801px) {
+    .button-primary {
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+        transition: color 0.3s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: $principal-color-700;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition: transform 0.3s ease-out;
+            border-radius: 2px;    
+        }
+
+        &:hover::before{
+            transform: scaleX(1);
+        }
+    }
+
+    .button-secondary {
+        border: none;
+        background-color: $principal-color-50;
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+        transition: color 0.3s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: $principal-color-100;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition: transform 0.3s ease-out;
+            border-radius: 2px;    
+        }
+
+        &:hover::before{
+            transform: scaleX(1);
+        }
+    }
+}
