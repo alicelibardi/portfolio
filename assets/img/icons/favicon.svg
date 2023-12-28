@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3864bb;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: SwearDisplay-Regular, 'Swear Display';
+        font-size: 21.53px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="8" cy="8" r="8"/>
+  <text class="cls-2" transform="translate(2.42 12.63)"><tspan x="0" y="0">a</tspan></text>
+</svg>
