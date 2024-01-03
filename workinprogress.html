@@ -2,10 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Portfolio di Alice Libardi, UI/UX designer e graphic designer">
+        <meta name="robots" content="all">
+        
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/menu.css">
         <link rel="stylesheet" href="assets/css/buttons.css">
         <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/workinprogress.css">
 
         <!--headings fonts-->
         <link rel="stylesheet" href="https://use.typekit.net/khf2wcc.css">
@@ -16,6 +20,13 @@
 
         <title>Work in progress...</title>
         <link rel="icon" type="image/svg" href="assets/img/icons/favicon.svg">
+
+        <!--open tag-->
+        <meta name="og:title" content="Portfolio di Alice Libardi">
+        <meta name="og:type" content="website">
+        <meta name="og:image" content="https://ibb.co/TWR1Z3v">
+        <meta name="og:url" content="https://alicelibardi.github.io/">
+        <meta name="description" content="Portfolio di Alice Libardi, UI/UX designer e graphic designer">
     </head>
 
     <body style="background-color: #EBF0F8;">
@@ -44,31 +55,26 @@
 
         <!--menu desktop-->
         <div class="menu-navbar">
-            <img src="assets/img/logo.svg" alt="Alice Libardi logo">
+            <a href="index.html"><img src="assets/img/logo.svg" alt="Alice Libardi logo"></a>
                 
             <div>
                 <ul>
-                    <li><p>UI/UX portfolio</p</li>
-                    <li><p>Graphic portfolio</p></li>
-                    <li><p>Chi sono</p></li>
+                    <li><a href="workinprogress.html"><p>UI/UX portfolio</p></a></li>
+                    <li><a href="workinprogress.html"><p>Graphic portfolio</p></a></li>
+                    <li><a href="chisono.html"><p>Chi sono</p></a></li>
                 </ul>
             </div>
                 
-            <button class="button-email">alicee.libardi@gmail.com</button>
+            <button class="button-email">alice.libardi@gmail.com</button>
             
             <img class="hamburger-menu" src="assets/img/icons/menu-cosed.svg" alt="">
         </div>
 
-        <div style="display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;">
-            <img src="assets/img/icons/work-in-progress.svg" alt="" style="width: 100px;">
+        <div class="workinprogress">
+            <img src="assets/img/icons/work-in-progress.svg" alt="">
             <h1>Work in progress</h1>
-            <p style="margin-top: 10px;">Coming soon...</p>
-            <button class="button-primary" style="margin-top: 5vw;"><a href="index.html">Torna alla home</a></button>
+            <p>Coming soon...</p>
+            <button class="button-primary"><a href="index.html">Torna alla home</a></button>
         </div>
         
     </body>
